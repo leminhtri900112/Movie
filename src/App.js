@@ -2,9 +2,5 @@ import "./App.css";
 import BaiTapTongHop from "./BaiTapTongHop/BaiTapTongHop";
 
 export default function App() {
-  return (
-    <div>
-      <BaiTapTongHop />
-    </div>
-  );
+  return <div></div>;
 }

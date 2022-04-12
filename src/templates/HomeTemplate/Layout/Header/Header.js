@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -22,40 +24,34 @@ export default function Header() {
         </a>
         <ul className="items-stretch hidden space-x-3 lg:flex">
           <li className="flex">
-            <a
+            <NavLink
+              activeClassName="dark:text-violet-400 dark:border-violet-400"
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400"
+              to="/home"
+              className="text-white flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400"
             >
-              Link
-            </a>
+              Home
+            </NavLink>
           </li>
           <li className="flex">
-            <a
+            <NavLink
+              activeClassName="dark:text-violet-400 dark:border-violet-400"
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
+              to="/news"
+              className="text-white flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400"
             >
-              Link
-            </a>
+              News
+            </NavLink>
           </li>
           <li className="flex">
-            <a
+            <NavLink
+              activeClassName="dark:text-violet-400 dark:border-violet-400"
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
+              to="/contact"
+              className="text-white flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:text-violet-400"
             >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-            >
-              Link
-            </a>
+              Contact
+            </NavLink>
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">
